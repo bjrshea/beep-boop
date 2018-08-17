@@ -17,6 +17,9 @@ var userInput = function(input) {
 };
 // User Interface Logic:
 $(document).ready(function() {
+  $("img").click(function() {
+    alert("Hi. My name is Beep-Boop.")
+  });
   $("#beep-boop").submit(function(event) {
     event.preventDefault();
     var input = parseInt($("#user-input").val());

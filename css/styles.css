@@ -1,7 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
-
 .jumbotron {
-  align-content: center;
+  text-align: center;
 }
