@@ -1,8 +1,18 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+.container {
+  padding-top: 80px;
+}
 .jumbotron {
+  padding-top: 80px;
+  padding-bottom: 80px;
   text-align: center;
+  color: white;
+}
+.circuit-board {
+  background-image: url("../img/sci-fi.jpg");
+  background-size: 100%;
 }
 #robot {
   padding-left: 40px;
