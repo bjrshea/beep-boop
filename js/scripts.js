@@ -2,18 +2,11 @@
 
 var userInput = function(input) {
 
-  var userResult = [];
-  for (var index = 0; index <= input; index += 1) {
-    if (input % 3 === 0) {
-      return "I'm sorry, Dave. I'm afraid I can't do that.";
-    } else if (input === 1) {
-      return "boop!";
-    } else if (input === 0) {
-      return "beep!";
-    } else {
-      alert(index);
-    }
+  var inputRange = [];
+  for (var startingNumber = 0; startingNumber <= input; startingNumber += 1) {
+    inputRange.push(startingNumber);
   }
+  return inputRange;
 };
 
 // User Interface Logic:
@@ -25,3 +18,13 @@ $(document).ready(function() {
     $("#result").text(result);
   });
 });
+
+// if (input % 3 === 0) {
+//   return "I'm sorry, Dave. I'm afraid I can't do that.";
+// } else if (input === 1) {
+//   return "boop!";
+// } else if (input === 2) {
+//   return "beep!";
+// } else {
+//   alert(numberRange);
+// }
