@@ -13,7 +13,7 @@ var userInput = function(input) {
       inputRange.push(i);
     }
   }
-  return inputRange;
+  return inputRange.join(', ');
 };
 // User Interface Logic:
 $(document).ready(function() {
@@ -24,6 +24,6 @@ $(document).ready(function() {
     event.preventDefault();
     var input = parseInt($("#user-input").val());
     var result = userInput(input);
-    $("#result").text(result);
+    $("#result").append(result);
   });
 });
