@@ -24,6 +24,6 @@ $(document).ready(function() {
     event.preventDefault();
     var input = parseInt($("#user-input").val());
     var result = userInput(input);
-    $("#result").append(result);
+    $("#result").text(result);
   });
 });
