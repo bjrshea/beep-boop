@@ -1,19 +1,19 @@
 // Business Logic:
 var userInput = function(input) {
-  var inputToString = input.toString();
   var inputRange = [];
-  for (var startingNumber = 0; startingNumber <= input; startingNumber += 1) {
-    inputRange.push(startingNumber);
+  for (var i = 0; i <= input; i++) {
+    var inputToString = i.toString();
+    if (i % 3 === 0) {
+      inputRange.push("I'm sorry, Dave. I'm afraid I can't do that.");
+    } else if (inputToString.includes("1")) {
+      inputRange.push("Boop!");
+    } else if (inputToString.includes("0")) {
+      inputRange.push("Beep!");
+    } else {
+      inputRange.push(i);
+    }
   }
-  if (input % 3 === 0) {
-    return "I'm sorry, Dave. I'm afraid I can't do that.";
-  } else if (inputToString.includes("1")) {
-    return "boop!";
-  } else if (inputToString.includes("0")) {
-    return "beep!";
-  } else {
-    return inputRange;
-  }
+  return inputRange;
 };
 // User Interface Logic:
 $(document).ready(function() {
